@@ -19,7 +19,13 @@ class AppTest {
     void testAssert(){
         App appInstance=new App();
         assertEquals(22, appInstance.addNumbers(10, 12));
-        assertTrue(appInstance.checkEmailValidity("Kimani@gmail.com"));
+    }
+
+    @Test
+    void testEmailValidity(){
+        App appInstance=new App();
+        assertTrue(appInstance.checkEmailValidity("Kimani@gmail"));
+        
     }
 
 }
